@@ -1,0 +1,51 @@
+body {
+  font-size: 1.2rem;
+}
+
+.top-box {
+  border: solid 1px black;
+  margin: 10px 10px 5px 10px;
+  padding: 10px;
+  background-image: url("assets/top-background.jpg");
+}
+
+.top-box:hover {
+  font-weight: bold;
+  color: red;
+
+}
+
+.row {
+  display: flex;
+}
+
+.nav-box {
+  border: solid 1px black;
+  margin: 5px 5px 10px 10px;
+  padding: 10px;
+  flex: 1;
+  background-color: lightyellow;
+}
+
+.nav-box:hover {
+  font-weight: bold;
+  color: red;
+
+}
+
+.content-box {
+  border: solid 1px black;
+  margin: 5px 10px 10px 5px;
+  padding: 10px;
+  flex: 6;
+}
+
+.content-box:hover {
+  font-weight: bold;
+  color: red;
+
+}
+
+.presentation-box {
+  border: solid black 3px;
+}

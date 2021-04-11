@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multimedia</title>
+  </head>
+  <body style="text-align: center;">
+    <h1>MULTIMEDIA: Image & Video</h1>
+
+    <div class="canvas-images" style="text-align: center;">
+      <div class="canvas-img" style="display: inline-block; width: 30%;">
+        <h1>Image to use:</h1>
+        <img id="elephant-img" width="256" height="180" src="assets/random-img.jpg" alt="Elephant Image">
+      </div>
+
+      <div class="canvas-img" style="display: inline-block; width: 50%;">
+        <h1>Canvas drawing Image:</h1>
+        <canvas id="myCanvas" width="512" height="360" style="border:1px solid black;">
+          Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+        <script>
+          window.onload = function() {
+            var c =
+            document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("elephant-img");
+            ctx.drawImage(img, -120, -20);
+          }
+        </script>
+      </div>
+    </div>
+
+    <hr style="padding: 0 5%; border: solid 1px black;">
+
+    <div>
+      <h1>Video: </h1>
+      <video width="512" height="360" controls>
+        <source src="assets/sample-vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  background-color: gray;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.content {
+  background-color: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.movie-desc {
+  margin: 40px 0;
+}
+
+.menu-item {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 0 10px;
+  margin: 0 3px;
+
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+}
+
+.poster {
+  flex: 1;
+}
+
+.poster-img {
+  margin: 5px;
+  width: 40%;
+  float: left;
+}
+
+.rating {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  font-size: 30pt;
+  padding: 20px;
+  margin: 5px;
+
+}
+
+.poster-desc {
+  flex: 4;
+  word-wrap: break-word;
+  font-size: 1rem;
+}
+
+.score-info {
+  width: 50%;
+  vertical-align: middle;
+}

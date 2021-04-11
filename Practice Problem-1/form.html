@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The World of Fruit</title>
+    <style>
+      .main-display {
+        border: solid black;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 32%;
+      }
+
+      table {
+        background: #eee;
+        table-layout: auto;
+        word-wrap: break-word;
+        vertical-align: top;
+        padding-right: 25px;
+        padding-left: 10px;
+        vertical-align: top;
+      }
+
+      td.form-label {
+        text-align: right;
+        vertical-align: top;
+      }
+
+      td.form-input {
+        text-align: left;
+      }
+
+      td {
+        padding: 5px 10px;
+      }
+
+      .world-of-fruit {
+        background: silver;
+        text-align: right;
+        margin: 0px;
+        padding: 5px 50px;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main-display">
+      <p class="world-of-fruit">The World of Fruit.</p>
+      <form class="" action="index.html" method="post">
+        <table>
+          <tr>
+            <th></th>
+            <th>Fruit Servey</th>
+          </tr>
+          <tr>
+            <td class="form-label"><label for="">Name</label></td>
+            <td class="form-input"><input type="text" name="" value=""></td>
+          </tr>
+          <tr>
+            <td class="form-label"><label for="">Address</label></td>
+            <td class="form-input"><input type="text" name="" value=""></td>
+          </tr>
+          <tr>
+            <td class="form-label"><label for="">Email</label></td>
+            <td class="form-input"><input type="email" name="" value=""></td>
+          </tr>
+          <tr>
+            <td class="form-label" rowspan="4">How many pieces of fruit do you eat per day?</td>
+            <td class="form-input"><input type="radio" name="fruit" id="0" value="0"><label for="0">0</label></td>
+          </tr>
+          <tr>
+            <td class="form-input"><input type="radio" name="fruit" id="1" value="1"><label for="1">1</label></td>
+          </tr>
+          <tr>
+            <td class="form-input"><input type="radio" name="fruit" id="2" value="2"><label for="2">2</label></td>
+          </tr>
+          <tr>
+            <td class="form-input">  <input type="radio" name="fruit" id="2+" value="2+"><label for="2+">More than 2</label></td>
+          </tr>
+          <tr>
+            <td class="form-label">My fovourite fruit</td>
+            <td class="form-input">
+              <select class="" name="" size="4" multiple>
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Plum">Plum</option>
+                <option value="Pomegranate">Pomegranate</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="form-label">Would you like a brochure? </td>
+            <td class="form-input"><input type="checkbox" name="" value=""></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="form-input"><button type="button" name="button">Submit</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
