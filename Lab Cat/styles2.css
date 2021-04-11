@@ -1,0 +1,52 @@
+body
+{
+    background: #6e66d3;
+    font-family: sans-serif;
+}
+
+form
+{
+    margin: 300px 300px;
+    background-color: white;
+    border-radius: 1%;
+    padding-left:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+
+input[type='text']
+{
+    width:90%;
+    padding:10px;
+    background-color: #e4e8ed;
+    border: 1px white;
+    margin: 10px;
+    border-radius: 2% 2%;
+    font-family: sans-serif;
+}
+
+input[type='checkbox']
+{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom:20px;
+    background-color: #6e66d3;
+    font-family: sans-serif;
+}
+
+button {
+  width:93%;
+  padding:10px;
+  background-color: #6e66d3;
+  border: 1px white;
+  margin-top: 20px;
+  margin-left:10px;
+  border-radius: 2% 2%;
+  font-family: sans-serif;
+}
+
+h6
+{
+    color: grey;
+}
