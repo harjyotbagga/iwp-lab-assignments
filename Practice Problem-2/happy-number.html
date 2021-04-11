@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Number</title>
+    <script>
+        function happy (no) {
+            var n = no;
+            var d = new Array();
+            while(true) {
+                var sum=0;
+                while (n!=0) {
+                    sum += ((n%10)**2);
+                    n = parseInt(n/10);
+                }
+                if (sum==1) {
+                    return true;
+                }
+                if (d.indexOf(sum)!=-1) {
+                    return false;
+                }
+                d.push(sum);
+                n = sum;
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <script>
+      var c = 0;
+      var d = new Array();
+      i = 1;
+      while (c<5) {
+        if (happy(i)) {
+            c++;
+            d.push(i);
+        }
+        i++;
+      }
+      document.write(`The first 5 Happy numbers are ${d}`);
+    </script>
+  </body>
+</html>

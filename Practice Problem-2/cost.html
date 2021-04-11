@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cost</title>
+  </head>
+  <script type="text/javascript">
+    function cost(m,c,mpg) {
+      var net_cost = (m/mpg)*c;
+      document.writeln(`The net cost of the trip is $${net_cost}.`);
+    }
+  </script>
+  <body>
+    <script>
+      var m = prompt("Enter number of miles.");
+      var c = prompt("Enter cost of a gallon of gas.");
+      var mpg = prompt("Enter car gas consumption (miles per gallon).");
+      cost(m,c,mpg);
+    </script>
+  </body>
+</html>

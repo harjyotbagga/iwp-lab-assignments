@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Greetings</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            offset: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <img id="#img" src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80" alt="Greeting Image" height="100px">
+    <h2 id="#heading">Welcome Message</h2>
+    <p id="#msg">This is the greeting message you can change.</p>
+    <button onclick="change_img()">Change Image</button>
+    <button onclick="change_img_pos()">Change Image Position</button>
+    <button onclick="edit_text()">Edit Text</button>
+    <button onclick="change_font_size()">Change Font Size</button>
+    <button onclick="change_font_color()">Change Font Color</button>
+
+    <script>
+        function change_img() {
+            var url = prompt("Enter new image URL: ");
+            var img = document.getElementById('#img');
+            img.src = url;
+        }
+
+        function change_img_pos() {
+            var pos = prompt("Image position (left, right, center)");
+            pos = pos.toLowerCase();
+            if (pos=="left") {
+                var img = document.getElementById('#img'); 
+                img.style.marginLeft = 0;
+                img.style.marginRight = "auto";
+            }
+            else if (pos=="right") {
+                var img = document.getElementById('#img'); 
+                img.style.marginRight = 0;
+                img.style.marginLeft = "auto";
+
+            }
+            else if (pos=="center") {
+                var img = document.getElementById('#img'); 
+                img.style.marginLeft = "auto";
+                img.style.marginRight = "auto";
+            }
+            else {
+                alert("Invalid Input. Enter only left, right or center");
+            }
+        }
+
+        function edit_text() {
+            var msg = prompt("Enter new message: ");
+            var e = document.getElementById('#msg'); 
+            e.innerText = msg;
+        }
+
+        function change_font_size() {
+            var sz = parseFloat(prompt("Enter new font size in rem."));
+            document.body.style.fontSize = `${sz}rem`;
+        }
+
+        function change_font_color() {
+            var col = prompt("Enter new font color name");
+            document.body.style.color = col;
+        }
+    </script>
+</body>
+</html>
