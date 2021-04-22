@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz</title>
+	<style>
+		body {
+			text-align: center;
+		}
+	</style>
+	<script src="quiz.js"></script>
+</head>
+
+<body>
+	<h1>QUIZ</h1>
+	<p id="question-text"></p>
+	<br>
+	<p>Enter Your Answer: </p>
+	<input type="text" id="user-answer">
+	<br><br>
+	<script>
+		loadQuestion(0);
+	</script>
+	<button onclick="nextQuestion()">SUBMIT</button>
+	<button onclick="nextQuestion()">NEXT</button>	
+</body>
+
+</html>

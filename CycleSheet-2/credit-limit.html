@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Credit Limit</title>
+</head>
+
+<body>
+	<h1>User Credit Limit</h1>
+	<script>
+		var acc_no = parseInt(prompt("Enter Account Number: "));
+		var initial_balance = parseInt(prompt("Enter Initial Balance of the Month: "));
+		var expense = parseInt(prompt("Enter Expenditure of this Month: "));
+		var credit_payments = parseInt(prompt("Enter total credit payments: "));
+		var credit_limit = parseInt(prompt("Enter max credit limit: "));
+		var new_balance = initial_balance + expense - credit_payments;
+		if (new_balance > credit_limit) {
+			document.writeln("Credit limit exceeded.");
+		} else {
+			document.writeln(`Account Number: ${acc_no}`);
+			document.writeln('<br>');
+			document.writeln(`Credit Limit: ${credit_limit}`);
+			document.writeln('<br>');
+			document.writeln(`Beginning Balance: ${initial_balance}`);
+			document.writeln('<br>');
+			document.writeln(`Total Expenditure: ${expense}`);
+			document.writeln('<br>');
+			document.writeln(`Total Credit Payments: ${credit_payments}`);
+			document.writeln('<br>');
+			document.writeln(`New Balance: ${new_balance}`);
+			document.writeln('<br>');
+		}
+	</script>
+
+</body>
+
+</html>

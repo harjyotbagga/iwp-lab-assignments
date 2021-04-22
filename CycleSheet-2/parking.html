@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parking Charges</title>
+
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
+	<script src="parking.js"></script>
+</head>
+<body style="margin: 10px;">
+	<h2>Parking Charges</h2>
+	<table id="cost-table">
+			<th>Sr.</th>
+			<th>Enter Hours Parked</th>
+			<th>Net Cost</th>
+		</tr>
+	</table>
+	<br>
+	<button onclick="getCost()">Find Cost</button>
+	<script>
+		userCount();
+	</script>
+</body>
+</html>

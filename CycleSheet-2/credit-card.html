@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validate Credit Cards</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		#cc-label {
+			border: solid black 1px;
+		}
+		.main-box {
+			border: 1px solid black;
+			padding: 10px;
+			text-align: left;
+			margin-left: auto;
+			margin-right: auto;
+			width: 22%;
+		}
+		#cc-status {
+			border: solid black 1px;
+			display: block;
+		}
+	</style>
+	<script src="credit-card.js"></script>
+</head>
+
+<body>
+	<div class="main-box">
+		<h1>Validate Credit Cards</h1>
+		<label for="cc">Credit card: </label> 
+		<select name="cc" id="cc-labels">
+			<option value="american_express">American Express</option>
+			<option value="diners_club">Diners Club</option>
+			<option value="discover">Discover</option>
+			<option value="jcb">JCB</option>
+			<option value="master_card">Master Card</option>
+			<option value="visa">Visa</option>
+		</select>
+		<br>
+		<label for="number">Number: </label>
+		<input type="number" id="cc-num" value="0"><br><br>
+		<button onclick="validate()">Validate</button>
+		<br>
+		<p id="cc-status">Enter Credit Card Number</p>
+	</div>
+</body>
+
+</html>

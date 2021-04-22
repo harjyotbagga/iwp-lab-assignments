@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Word Decoder Challenge</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		#shuffled-word {
+			color: red;
+		}
+	</style>
+	<script src="decoder.js"></script>
+</head>
+
+<body>
+	<h1>Word Decoder Challenge</h1>
+	<br>
+	<h2 id="shuffled-word">SHUFFLED WORD</h2>
+	<input type="text" id="user-word">
+	<button onclick="checkAns()">SUBMIT</button>
+	<script>
+		getShuffledWord();
+	</script>
+</body>
+
+</html>
