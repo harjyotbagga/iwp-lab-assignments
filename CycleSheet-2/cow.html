@@ -1,0 +1,51 @@
+<html>
+<title>Color Cow</title>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mini.css/2.0.2/mini-default.min.css"></script>
+    <style>
+        body {
+            margin: 20px;
+        }
+        
+        #color_change {
+            border: 1px solid;
+        }
+        
+        .cow_color {
+            font-weight: bold;
+        }
+        
+        .container {
+            border: 1px solid black;
+            width: max-content;
+            padding: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2><span class="cow_color">Blue</span> Cow by Gelett Burgess (published in The Lark, 1895)</h2>
+        <p>I never saw a <span class="cow_color">Blue</span> Cow, I never hope to see one; But I can tell you, anyhow, I'd rather see than be one.
+        </p>
+        <p>Change the cow's color to:
+            <input id="input_color" value="Purple">
+            <button id="button_change">Change!</button>
+        </p>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+
+        var button = $("#button_change");
+        $(button).click(function() {
+            var inputValue = $("#input_color").val();
+            var element = $(".cow_color");
+            $(element).html(inputValue);
+
+        });
+
+    });
+</script>

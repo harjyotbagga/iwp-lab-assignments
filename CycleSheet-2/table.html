@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Table</title>
+</head>
+
+<body>
+    <div>
+        <table style="border-radius: 5%;">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mannix</td>
+                    <td>Bolton</td>
+                    <td>Merizo</td>
+                    <td>Michigan</td>
+                </tr>
+                <tr>
+                    <td>Suki</td>
+                    <td>King</td>
+                    <td>Fairmont</td>
+                    <td>Oklahoma</td>
+                </tr>
+                <tr>
+                    <td>Shelby</td>
+                    <td>English</td>
+                    <td>Durham</td>
+                    <td>Arkansas</td>
+                </tr>
+                <tr>
+                    <td>Portia</td>
+                    <td>Burns</td>
+                    <td>Priceton</td>
+                    <td>Rhode Island</td>
+                </tr>
+                <tr>
+                    <td>Dacey</td>
+                    <td>Young</td>
+                    <td>Covina</td>
+                    <td>South Carolina</td>
+                </tr>
+                <tr>
+                    <td>Clark</td>
+                    <td>Reyes</td>
+                    <td>Grand Rapids</td>
+                    <td>New Jersey</td>
+                </tr>
+                <tr>
+                    <td>Maris</td>
+                    <td>Decker</td>
+                    <td>Sierra Madre</td>
+                    <td>Georgia</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("td").css("padding", "5px 10px");
+        $("th").css("padding", "5px 10px");
+        $("tbody tr").css({
+            "color": "white",
+            "background": "dimgray"
+        });
+        $("tbody tr:nth-child(2n)").css({
+            "color": "black",
+            "background": "white"
+        });
+    </script>
+
+</body>
+
+</html>
