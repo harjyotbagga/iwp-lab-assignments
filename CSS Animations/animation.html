@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style> 
+        #animation-div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+            animation-direction: alternate;
+        }
+
+        @keyframes example { 
+            from {background-color: red;}
+            to {background-color: blueviolet;}
+        }
+    </style>
+    </head>
+    <body>
+        <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+        <div id="animation-div"></div>
+        <p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+    </body>
+</html>
