@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE employees [
+  <!ELEMENT employees (employee*)>
+  <!ELEMENT employee EMPTY>
+  <!ATTLIST employee employeeID   ID     #REQUIRED
+                     manager      IDREF  #IMPLIED
+                     subordinates IDREFS #IMPLIED>
+]>
+
+
+<!-- Also, the element specifies the number of occurrences of the child elements using (+, *,? ).
++ => sign indicates two or more frequency
+* => indicates the element can appear more number of times.
+? => Indicates elements can occur only once.
+
+<!ATTLIST element-name attribute-name attribute-type default-value>
+ -->

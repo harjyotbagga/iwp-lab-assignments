@@ -1,0 +1,6 @@
+<employees>
+  <employee employeeID="E3247" manager="E8012" />
+  <employee employeeID="E3248" manager="E8012" />
+  <employee employeeID="E3249" manager="E8012" />
+  <employee employeeID="E8012" subordinates="E3247 E3248 E3249" />
+</employees>
