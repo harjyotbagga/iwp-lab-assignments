@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style> 
+    div {
+    /*CSS user interface properties:
+    resize
+    outline-offset  */
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    /* resize: horizontal/vertical/both; */
+    resize: both;
+    overflow: auto;
+    }
+
+    div.ex1 {
+    margin: 20px;
+    border: 1px solid black;
+    outline: 4px solid red;
+    outline-offset: 20px;
+    } 
+
+    div.ex2 {
+    margin: 10px;
+    border: 1px solid black;
+    outline: 5px dashed blue;
+    outline-offset: 5px;
+    } 
+
+</style>
+</head>
+
+<body>
+    <h1>The resize Property</h1>
+    <div class="ex0">
+        <p>Let the user resize only the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h1>The outline-offset Property</h1>
+    <div class="ex1">
+        The outline-offset property adds space between an outline and the edge or border of an element.
+    </div>
+    <br>
+    <div class="ex2">
+        This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.
+    </div>
+</body>
+</html>
+

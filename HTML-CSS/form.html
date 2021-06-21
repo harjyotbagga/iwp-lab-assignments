@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Form</title>
+      <style>
+          body {
+              text-align: center;
+              width: 80%;
+          }
+      </style>
+   </head>
+	
+   <body>
+      <form >
+         <fieldset>
+            First name: <input type = "text" name = "first_name" />
+            <br>
+            Last name: <input type = "text" name = "last_name" />
+            <br>
+            Password: <input type = "password" name = "password" />
+            <br>
+            Description : <br />
+            <textarea rows = "5" cols = "50" name = "description">
+               Enter description here...
+            </textarea>
+            <br>
+         </fieldset>
+         <fieldset>
+            <input type = "checkbox" name = "maths" value = "on"> Maths
+            <input type = "checkbox" name = "physics" value = "on"> Physics
+            <br>
+         </fieldset>
+         <fieldset>
+            <input type = "radio" name = "subject" value = "maths"> Maths
+            <input type = "radio" name = "subject" value = "physics"> Physics
+            <br>
+         </fieldset>
+         <fieldset>
+            <select name = "dropdown">
+                <option value = "Maths" selected>Maths</option>
+                <option value = "Physics">Physics</option>
+             </select>
+             <br>
+         </fieldset>
+         <fieldset>
+            <input type = "file" name = "fileupload" accept = "image/*" />
+            <br>
+         </fieldset>
+         <input type = "submit" name = "submit" value = "Submit" />
+         <input type = "reset" name = "reset"  value = "Reset" />
+         <input type = "button" name = "ok" value = "OK" />
+         <input type = "image" name = "imagebutton" src = "/html/images/logo.png" />
+         <br>
+         
+      </form>
+   </body>
+	
+</html>
